@@ -37,3 +37,38 @@ describe('GET /api/abfahrten', () => {
     expect(antwort.status).toBe(400);
   });
 });
+
+describe('GET /api/abfahrten mit tag=sonntag', () => {
+  const sonntag = async (zeit: string): Promise<TafelZeile[]> => {
+    const antwort = await request(app).get('/api/abfahrten').query({ zeit, anzahl: 30, tag: 'sonntag' });
+    expect(antwort.status).toBe(200);
+    return antwort.body;
+  };
+
+  it('zeigt keine Regionalbahnen', async () => {
+    const zeilen = await sonntag('05:00');
+    expect(zeilen.filter((z) => z.zug.startsWith('RB '))).toEqual([]);
+  });
+
+  it('zeigt S-Bahnen erst ab 08:00', async () => {
+    const sBahnen = (await sonntag('05:00')).filter((z) => z.zug.startsWith('S '));
+    expect(sBahnen.length).toBeGreaterThan(0);
+    expect(sBahnen.every((z) => z.plan >= '08:00')).toBe(true);
+  });
+
+  it('lässt alle anderen Züge wie werktags fahren', async () => {
+    const andere = (zeilen: TafelZeile[]) => zeilen.filter((z) => /^(RE|FX) /.test(z.zug)).slice(0, 8);
+    expect(andere(await sonntag('05:00'))).toEqual(andere(await tafel('05:00', 30)));
+  });
+
+  it('zeigt ohne Parameter weiter den Werktagsfahrplan', async () => {
+    const zuege = (await tafel('05:00', 30)).map((z) => z.zug);
+    expect(zuege).toContain('RB 40');
+    expect(zuege).toContain('S 1');
+  });
+
+  it('lehnt einen unbekannten Tag ab', async () => {
+    const antwort = await request(app).get('/api/abfahrten').query({ zeit: '12:00', tag: 'montag' });
+    expect(antwort.status).toBe(400);
+  });
+});

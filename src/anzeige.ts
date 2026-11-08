@@ -1,5 +1,9 @@
 // Aufbereitung der Werte für die Tafel.
 
+export function istSonntag(suche: string): boolean {
+  return new URLSearchParams(suche).get('tag') === 'sonntag';
+}
+
 export function restMinuten(zeit: string, erwartet: string): number {
   const jetzt = parseInt(zeit.slice(0, 2)) * 60 + parseInt(zeit.slice(3));
   const dann = parseInt(erwartet.slice(0, 2)) * 60 + parseInt(erwartet.slice(3));

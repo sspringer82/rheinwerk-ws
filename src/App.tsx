@@ -18,7 +18,7 @@ function Zeile({ zeile, zeit }: { zeile?: TafelZeile; zeit: string }) {
 }
 
 export function App() {
-  const { zeit, zeilen } = useTafel();
+  const { zeit, zeilen, sonntag } = useTafel();
 
   return (
     <main className="tafel">
@@ -26,6 +26,7 @@ export function App() {
         <h1>{BAHNHOF}</h1>
         <Fallblatt text={zeit} laenge={5} />
         <p>Abfahrt</p>
+        {sonntag && <p className="sonntag">SONNTAG</p>}
       </header>
       <div className="zeile spalten" role="row">
         <span>Zeit</span>

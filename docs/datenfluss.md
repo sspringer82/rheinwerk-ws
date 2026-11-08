@@ -3,7 +3,7 @@
 ```
 data/abfahrten.json
   → server/daten.ts       einlesen und prüfen (einmal beim Start)
-  → server/app.ts         GET /api/abfahrten?zeit=…&anzahl=…
+  → server/app.ts         GET /api/abfahrten?zeit=…&anzahl=…[&tag=sonntag]
   → shared/tafel.ts       erwartete Zeit berechnen, auswählen, sortieren
   → src/useTafel.ts       Abfrage pro simulierter Minute, Zeilen im State
   → src/App.tsx           Spalten belegen, Texte aufbereiten
@@ -18,11 +18,11 @@ Beim Start des Servers ruft `createApp()` einmal `ladeAbfahrten()` auf. Die Funk
 
 Die Tafel läuft auf einer simulierten Uhr (`src/config.ts`). `useTafel` startet bei 23:46 und zählt alle 4 Sekunden eine Minute weiter. Nach 23:59 springt die Uhr zurück auf 23:46.
 
-Beim ersten Rendern und bei jeder neuen Uhrzeit schickt `useTafel` die Anfrage `/api/abfahrten?zeit=<Uhrzeit>&anzahl=10`. Im Entwicklungsbetrieb leitet der Vite-Server (Port 5173) alle `/api`-Aufrufe an die API auf Port 3001 weiter.
+Beim ersten Rendern und bei jeder neuen Uhrzeit schickt `useTafel` die Anfrage `/api/abfahrten?zeit=<Uhrzeit>&anzahl=10`. Enthält die Tafel-URL `?tag=sonntag`, hängt `useTafel` den Parameter an die Anfrage an und im Kopf der Tafel steht zusätzlich `SONNTAG`. Im Entwicklungsbetrieb leitet der Vite-Server (Port 5173) alle `/api`-Aufrufe an die API auf Port 3001 weiter.
 
 ## 3. Der Server wählt die Abfahrten aus
 
-Die Route in `server/app.ts` prüft `zeit` und `anzahl` per Zod und übergibt beides mit der Abfahrtsliste an `naechsteAbfahrten()` aus `shared/tafel.ts`:
+Die Route in `server/app.ts` prüft `zeit`, `anzahl` und das optionale `tag` per Zod. Bei `tag=sonntag` filtert sie die Abfahrtsliste vorab mit `faehrtSonntags()`: Regionalbahnen entfallen, S-Bahnen fahren erst ab 08:00 Uhr (maßgeblich ist `plan`). Dann übergibt sie `zeit` und `anzahl` mit der Abfahrtsliste an `naechsteAbfahrten()` aus `shared/tafel.ts`:
 
 1. Jede Abfahrt bekommt das Feld `erwartet`, also `plan` plus `verspaetung` (aus 05:04 und 3 Minuten wird 05:07). Ohne Verspätung gilt `plan`.
 2. Es bleiben die Abfahrten, deren `erwartet` nicht vor der abgefragten Zeit liegt.

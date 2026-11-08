@@ -64,6 +64,10 @@ body {
   color: var(--gedaempft);
 }
 
+.kopf .sonntag {
+  color: var(--akzent);
+}
+
 .kopf .fallblatt {
   flex: none;
   color: var(--schrift);
