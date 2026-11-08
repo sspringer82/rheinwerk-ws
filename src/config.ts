@@ -1,5 +1,3 @@
-export const BAHNHOF = 'NEUSTADT HBF';
-
 // Die Tafel läuft auf einer simulierten Uhr und wiederholt die letzten Minuten des Betriebstags.
 export const START_ZEIT = '23:46';
 export const ENDE_ZEIT = '23:59';

@@ -1,6 +1,6 @@
 import type { TafelZeile } from '../shared/types.ts';
 import { aktuellText, restText } from './anzeige.ts';
-import { ANZEIGE_ZEILEN, BAHNHOF } from './config.ts';
+import { ANZEIGE_ZEILEN } from './config.ts';
 import { Fallblatt } from './Fallblatt.tsx';
 import { useTafel } from './useTafel.ts';
 
@@ -18,12 +18,12 @@ function Zeile({ zeile, zeit }: { zeile?: TafelZeile; zeit: string }) {
 }
 
 export function App() {
-  const { zeit, zeilen, sonntag } = useTafel();
+  const { bahnhof, zeit, zeilen, sonntag } = useTafel();
 
   return (
     <main className="tafel">
       <header className="kopf">
-        <h1>{BAHNHOF}</h1>
+        <h1>{bahnhof}</h1>
         <Fallblatt text={zeit} laenge={5} />
         <p>Abfahrt</p>
         {sonntag && <p className="sonntag">SONNTAG</p>}

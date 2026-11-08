@@ -2,6 +2,7 @@ import express from 'express';
 import { z } from 'zod';
 import { faehrtSonntags, naechsteAbfahrten } from '../shared/tafel.ts';
 import { ladeAbfahrten } from './daten.ts';
+import type { Konfiguration } from './konfiguration.ts';
 
 const abfrageSchema = z.object({
   zeit: z.string().regex(/^\d\d:\d\d$/),
@@ -9,12 +10,17 @@ const abfrageSchema = z.object({
   tag: z.literal('sonntag').optional(),
 });
 
-export function createApp() {
+export function createApp(konfiguration: Konfiguration) {
   const app = express();
   const abfahrten = ladeAbfahrten();
 
   app.get('/api/health', (_req, res) => {
-    res.json({ status: 'ok', abfahrten: abfahrten.length });
+    res.json({
+      status: 'ok',
+      abfahrten: abfahrten.length,
+      bahnhof: konfiguration.bahnhofName,
+      tokenGesetzt: konfiguration.fahrplanToken !== undefined,
+    });
   });
 
   app.get('/api/abfahrten', (req, res) => {

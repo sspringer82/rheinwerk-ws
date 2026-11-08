@@ -3,13 +3,31 @@ import { describe, expect, it } from 'vitest';
 import type { TafelZeile } from '../shared/types.ts';
 import { createApp } from './app.ts';
 
-const app = createApp();
+const app = createApp({ bahnhofName: 'Teststadt', fahrplanToken: 'test-geheimnis' });
 
 const tafel = async (zeit: string, anzahl = 10): Promise<TafelZeile[]> => {
   const antwort = await request(app).get('/api/abfahrten').query({ zeit, anzahl });
   expect(antwort.status).toBe(200);
   return antwort.body;
 };
+
+describe('GET /api/health', () => {
+  it('liefert den Bahnhofsnamen und meldet einen gesetzten Token', async () => {
+    const antwort = await request(app).get('/api/health');
+    expect(antwort.status).toBe(200);
+    expect(antwort.body).toMatchObject({ bahnhof: 'Teststadt', tokenGesetzt: true });
+  });
+
+  it('meldet einen fehlenden Token', async () => {
+    const antwort = await request(createApp({ bahnhofName: 'Teststadt' })).get('/api/health');
+    expect(antwort.body.tokenGesetzt).toBe(false);
+  });
+
+  it('gibt den Token selbst nie heraus', async () => {
+    const antwort = await request(app).get('/api/health');
+    expect(antwort.text).not.toContain('test-geheimnis');
+  });
+});
 
 describe('GET /api/abfahrten', () => {
   it('liefert höchstens die gewünschte Anzahl', async () => {

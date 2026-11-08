@@ -44,6 +44,8 @@ Die Route in `server/app.ts` prüft `zeit`, `anzahl` und das optionale `tag` per
 
 Das Feld `via` wird mitgeliefert, aber auf der Tafel nicht angezeigt.
 
+Der Bahnhofsname im Kopf der Tafel kommt nicht aus dem Fahrplan: `server/index.ts` liest beim Start `BAHNHOF_NAME` und `FAHRPLAN_TOKEN` aus der `.env`, `GET /api/health` liefert daraus `bahnhof` und `tokenGesetzt` (nur ob ein Token gesetzt ist, nie den Token selbst). `useTafel` holt den Namen von dort und wiederholt den Abruf pro simulierter Minute, bis er geklappt hat.
+
 ## 5. Vom Text zum Fallblatt
 
 `Fallblatt` wandelt den Text in Großbuchstaben um, bringt ihn auf die Spaltenbreite und legt für jedes Zeichen ein `Blatt` an. Jedes Blatt beginnt leer und klappt alle 40 ms ein Zeichen im Alphabet weiter, bis das Zielzeichen erreicht ist. Zeichen außerhalb des Alphabets werden direkt gesetzt. Ändert sich mit der nächsten Uhrzeit ein Wert, klappt das Blatt von seinem aktuellen Zeichen aus zum neuen.

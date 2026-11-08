@@ -14,10 +14,26 @@ async function holeAbfahrten(zeit: string, sonntag: boolean): Promise<TafelZeile
   return antwort.json();
 }
 
+export async function holeBahnhof(): Promise<string> {
+  const antwort = await fetch('/api/health');
+  if (!antwort.ok) throw new Error(`API antwortet mit ${antwort.status}`);
+  const { bahnhof } = (await antwort.json()) as { bahnhof: string };
+  return bahnhof;
+}
+
 export function useTafel() {
   const sonntag = istSonntag(window.location.search);
+  const [bahnhof, setBahnhof] = useState('');
   const [zeit, setZeit] = useState(START_ZEIT);
   const [zeilen, setZeilen] = useState<TafelZeile[]>([]);
+
+  // Hängt an der Uhr, damit ein fehlgeschlagener Abruf in der nächsten Minute wiederholt wird.
+  useEffect(() => {
+    if (bahnhof) return;
+    holeBahnhof()
+      .then(setBahnhof)
+      .catch((fehler) => console.error(fehler));
+  }, [bahnhof, zeit]);
 
   useEffect(() => {
     const takt = setInterval(() => {
@@ -38,5 +54,5 @@ export function useTafel() {
     };
   }, [zeit, sonntag]);
 
-  return { zeit, zeilen, sonntag };
+  return { bahnhof, zeit, zeilen, sonntag };
 }

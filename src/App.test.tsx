@@ -2,7 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { App } from './App.tsx';
 import { istSonntag } from './anzeige.ts';
-import { abfahrtenUrl } from './useTafel.ts';
+import { abfahrtenUrl, holeBahnhof } from './useTafel.ts';
 
 const kopfBei = (suche: string): string => {
   vi.stubGlobal('window', { location: { search: suche } });
@@ -11,6 +11,15 @@ const kopfBei = (suche: string): string => {
 
 afterEach(() => {
   vi.unstubAllGlobals();
+});
+
+describe('Bahnhofsname auf der Tafel', () => {
+  it('holt den Namen aus /api/health', async () => {
+    const abruf = vi.fn(async () => Response.json({ status: 'ok', bahnhof: 'Teststadt' }));
+    vi.stubGlobal('fetch', abruf);
+    await expect(holeBahnhof()).resolves.toBe('Teststadt');
+    expect(abruf).toHaveBeenCalledWith('/api/health');
+  });
 });
 
 describe('Sonntag auf der Tafel', () => {
