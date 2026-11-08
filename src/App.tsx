@@ -24,6 +24,7 @@ export function App() {
     <main className="tafel">
       <header className="kopf">
         <h1>{BAHNHOF}</h1>
+        <Fallblatt text={zeit} laenge={5} />
         <p>Abfahrt</p>
       </header>
       <div className="zeile spalten" role="row">
