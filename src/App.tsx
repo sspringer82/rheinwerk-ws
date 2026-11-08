@@ -10,7 +10,7 @@ function Zeile({ zeile, zeit }: { zeile?: TafelZeile; zeit: string }) {
       <Fallblatt text={zeile?.plan ?? ''} laenge={5} />
       <Fallblatt text={zeile?.zug ?? ''} laenge={6} />
       <Fallblatt text={zeile?.ziel ?? ''} laenge={13} />
-      <Fallblatt text={zeile?.gleisNeu ?? zeile?.gleis ?? ''} laenge={2} />
+      <Fallblatt text={zeile?.gleisNeu ?? zeile?.gleis ?? ''} laenge={2} blinkt={zeile?.gleisNeu !== undefined} />
       <Fallblatt text={zeile ? aktuellText(zeile.plan, zeile.erwartet) : ''} laenge={5} />
       <Fallblatt text={zeile ? restText(zeit, zeile.erwartet) : ''} laenge={6} />
     </div>

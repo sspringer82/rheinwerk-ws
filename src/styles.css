@@ -140,6 +140,18 @@ body {
   content: '';
 }
 
+.fallblatt.blinkt {
+  color: var(--akzent);
+  animation: blinken 1.2s step-end infinite;
+}
+
+@keyframes blinken {
+  60%,
+  100% {
+    color: var(--blatt);
+  }
+}
+
 @keyframes klappen {
   from {
     transform: rotateX(0);
@@ -150,6 +162,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .fallblatt.blinkt {
+    animation: none;
+  }
+
   .blatt-klappe {
     display: none;
   }

@@ -33,10 +33,10 @@ function Blatt({ zeichen }: { zeichen: string }) {
   );
 }
 
-export function Fallblatt({ text, laenge }: { text: string; laenge: number }) {
+export function Fallblatt({ text, laenge, blinkt = false }: { text: string; laenge: number; blinkt?: boolean }) {
   const zeichen = text.toUpperCase().padEnd(laenge).slice(0, laenge).split('');
   return (
-    <span className="fallblatt" aria-label={text}>
+    <span className={blinkt ? 'fallblatt blinkt' : 'fallblatt'} aria-label={text}>
       {zeichen.map((z, i) => (
         <Blatt key={i} zeichen={z} />
       ))}
