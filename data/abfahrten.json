@@ -1,0 +1,1451 @@
+[
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "05:04",
+    "gleis": "10",
+    "verspaetung": 3
+  },
+  {
+    "zug": "RE 10",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "05:08",
+    "gleis": "5",
+    "verspaetung": 4
+  },
+  {
+    "zug": "FX 500",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "05:12",
+    "gleis": "1",
+    "verspaetung": 6
+  },
+  {
+    "zug": "RB 40",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "05:22",
+    "gleis": "7",
+    "verspaetung": 17
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "05:27",
+    "gleis": "11",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 30",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "05:36",
+    "gleis": "6",
+    "verspaetung": 4
+  },
+  {
+    "zug": "FX 600",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "05:42",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 50",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "05:51",
+    "gleis": "8",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "06:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 11",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "06:08",
+    "gleis": "5",
+    "verspaetung": 7
+  },
+  {
+    "zug": "RB 41",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "06:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "06:27",
+    "gleis": "11",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 31",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "06:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 51",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "06:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "07:04",
+    "gleis": "10",
+    "verspaetung": 4
+  },
+  {
+    "zug": "RE 12",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "07:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 502",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "07:12",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 42",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "07:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "07:27",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 32",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "07:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 602",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "07:42",
+    "gleis": "3",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RB 52",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "07:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "08:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 13",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "08:08",
+    "gleis": "5",
+    "verspaetung": 10,
+    "gleisNeu": "6"
+  },
+  {
+    "zug": "RB 43",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "08:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "08:27",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 33",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "08:36",
+    "gleis": "6",
+    "verspaetung": 8
+  },
+  {
+    "zug": "RB 53",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "08:51",
+    "gleis": "8",
+    "verspaetung": 3
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "09:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 14",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "09:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 504",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "09:12",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 44",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "09:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "09:27",
+    "gleis": "11",
+    "verspaetung": 20
+  },
+  {
+    "zug": "RE 34",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "09:36",
+    "gleis": "6",
+    "verspaetung": 0,
+    "gleisNeu": "7"
+  },
+  {
+    "zug": "FX 604",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "09:42",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 54",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "09:51",
+    "gleis": "8",
+    "verspaetung": 8
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "10:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 15",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "10:08",
+    "gleis": "5",
+    "verspaetung": 0,
+    "gleisNeu": "6"
+  },
+  {
+    "zug": "RB 45",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "10:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "10:27",
+    "gleis": "11",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 35",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "10:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 55",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "10:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "11:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 16",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "11:08",
+    "gleis": "5",
+    "verspaetung": 10
+  },
+  {
+    "zug": "FX 506",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "11:12",
+    "gleis": "1",
+    "verspaetung": 4
+  },
+  {
+    "zug": "RB 46",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "11:22",
+    "gleis": "7",
+    "verspaetung": 4
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "11:27",
+    "gleis": "11",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 36",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "11:36",
+    "gleis": "6",
+    "verspaetung": 3
+  },
+  {
+    "zug": "FX 606",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "11:42",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 56",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "11:51",
+    "gleis": "8",
+    "verspaetung": 0,
+    "gleisNeu": "9"
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "12:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 17",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "12:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 47",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "12:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "12:27",
+    "gleis": "11",
+    "verspaetung": 3
+  },
+  {
+    "zug": "RE 37",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "12:36",
+    "gleis": "6",
+    "verspaetung": 0,
+    "gleisNeu": "7"
+  },
+  {
+    "zug": "RB 57",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "12:51",
+    "gleis": "8",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "13:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 18",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "13:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 508",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "13:12",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 48",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "13:22",
+    "gleis": "7",
+    "verspaetung": 1
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "13:27",
+    "gleis": "11",
+    "verspaetung": 4
+  },
+  {
+    "zug": "RE 38",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "13:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 608",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "13:42",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 58",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "13:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "14:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 19",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "14:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 49",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "14:22",
+    "gleis": "7",
+    "verspaetung": 7
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "14:27",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 39",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "14:36",
+    "gleis": "6",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RB 59",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "14:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "15:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 20",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "15:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 510",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "15:12",
+    "gleis": "1",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RB 50",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "15:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "15:27",
+    "gleis": "11",
+    "verspaetung": 11
+  },
+  {
+    "zug": "RE 40",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "15:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 610",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "15:42",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 60",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "15:51",
+    "gleis": "8",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "16:04",
+    "gleis": "10",
+    "verspaetung": 16
+  },
+  {
+    "zug": "RE 21",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "16:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 51",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "16:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "16:27",
+    "gleis": "11",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 41",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "16:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 61",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "16:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "17:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 22",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "17:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 512",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "17:12",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 52",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "17:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "17:27",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 42",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "17:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 612",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "17:42",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 62",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "17:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "18:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 23",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "18:08",
+    "gleis": "5",
+    "verspaetung": 0,
+    "gleisNeu": "6"
+  },
+  {
+    "zug": "RB 53",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "18:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "18:27",
+    "gleis": "11",
+    "verspaetung": 0,
+    "gleisNeu": "12"
+  },
+  {
+    "zug": "RE 43",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "18:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 63",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "18:51",
+    "gleis": "8",
+    "verspaetung": 3
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "19:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 24",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "19:08",
+    "gleis": "5",
+    "verspaetung": 6
+  },
+  {
+    "zug": "FX 514",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "19:12",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 54",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "19:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "19:27",
+    "gleis": "11",
+    "verspaetung": 16
+  },
+  {
+    "zug": "RE 44",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "19:36",
+    "gleis": "6",
+    "verspaetung": 0,
+    "gleisNeu": "7"
+  },
+  {
+    "zug": "FX 614",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "19:42",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 64",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "19:51",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "20:04",
+    "gleis": "10",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 25",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "20:08",
+    "gleis": "5",
+    "verspaetung": 17
+  },
+  {
+    "zug": "RB 55",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "20:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "20:27",
+    "gleis": "11",
+    "verspaetung": 3
+  },
+  {
+    "zug": "RE 45",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "20:36",
+    "gleis": "6",
+    "verspaetung": 18,
+    "gleisNeu": "7"
+  },
+  {
+    "zug": "RB 65",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "20:51",
+    "gleis": "8",
+    "verspaetung": 11
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "21:04",
+    "gleis": "10",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 26",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "21:08",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 516",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "21:12",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 56",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "21:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "21:27",
+    "gleis": "11",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 46",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "21:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 616",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "21:42",
+    "gleis": "3",
+    "verspaetung": 20
+  },
+  {
+    "zug": "RB 66",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "21:51",
+    "gleis": "8",
+    "verspaetung": 3
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "22:04",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 27",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "22:08",
+    "gleis": "5",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RB 57",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "22:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "22:27",
+    "gleis": "11",
+    "verspaetung": 17
+  },
+  {
+    "zug": "RE 47",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "22:36",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 67",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "22:51",
+    "gleis": "8",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RB 67",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "23:22",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "23:34",
+    "gleis": "10",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 28",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "23:38",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 618",
+    "ziel": "Südenburg",
+    "via": [
+      "Hohenfels",
+      "Talheim"
+    ],
+    "plan": "23:42",
+    "gleis": "3",
+    "verspaetung": 3
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "23:46",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 48",
+    "ziel": "Waldhausen",
+    "via": [
+      "Birkenau",
+      "Eichstede"
+    ],
+    "plan": "23:47",
+    "gleis": "6",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RB 68",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "23:49",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 1",
+    "ziel": "Flughafen",
+    "via": [
+      "Messe"
+    ],
+    "plan": "23:50",
+    "gleis": "10",
+    "gleisNeu": "12",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 519",
+    "ziel": "Nordhafen",
+    "via": [
+      "Moorbach",
+      "Altwerder"
+    ],
+    "plan": "23:51",
+    "gleis": "1",
+    "verspaetung": 4
+  },
+  {
+    "zug": "RB 69",
+    "ziel": "Kirchdorf",
+    "via": [
+      "Ostwiesen"
+    ],
+    "plan": "23:52",
+    "gleis": "7",
+    "verspaetung": 1
+  },
+  {
+    "zug": "S 2",
+    "ziel": "Rosental",
+    "via": [
+      "Uni"
+    ],
+    "plan": "23:54",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 29",
+    "ziel": "Lindental",
+    "via": [
+      "Birkenau"
+    ],
+    "plan": "23:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 70",
+    "ziel": "Mühlfeld",
+    "via": [
+      "Grünau"
+    ],
+    "plan": "23:56",
+    "gleis": "8",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 79",
+    "ziel": "Seeburg",
+    "via": [
+      "Lindental"
+    ],
+    "plan": "23:58",
+    "gleis": "5",
+    "verspaetung": 5
+  }
+]

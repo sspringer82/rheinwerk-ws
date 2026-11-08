@@ -1,0 +1,905 @@
+[
+  {
+    "zug": "RB 140",
+    "von": "Ostwiesen",
+    "plan": "05:09",
+    "gleis": "7",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "05:14",
+    "gleis": "11",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 130",
+    "von": "Eichstede",
+    "plan": "05:23",
+    "gleis": "6",
+    "verspaetung": 20
+  },
+  {
+    "zug": "FX 700",
+    "von": "Talheim",
+    "plan": "05:29",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 150",
+    "von": "Grünau",
+    "plan": "05:38",
+    "gleis": "8",
+    "verspaetung": 1
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "05:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 110",
+    "von": "Lindental",
+    "plan": "05:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 600",
+    "von": "Altwerder",
+    "plan": "05:59",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 141",
+    "von": "Ostwiesen",
+    "plan": "06:09",
+    "gleis": "7",
+    "verspaetung": 4
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "06:14",
+    "gleis": "11",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 131",
+    "von": "Eichstede",
+    "plan": "06:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 151",
+    "von": "Grünau",
+    "plan": "06:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "06:51",
+    "gleis": "10",
+    "verspaetung": 3
+  },
+  {
+    "zug": "RE 111",
+    "von": "Lindental",
+    "plan": "06:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 142",
+    "von": "Ostwiesen",
+    "plan": "07:09",
+    "gleis": "7",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "07:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 132",
+    "von": "Eichstede",
+    "plan": "07:23",
+    "gleis": "6",
+    "verspaetung": 2
+  },
+  {
+    "zug": "FX 702",
+    "von": "Talheim",
+    "plan": "07:29",
+    "gleis": "3",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RB 152",
+    "von": "Grünau",
+    "plan": "07:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "07:51",
+    "gleis": "10",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 112",
+    "von": "Lindental",
+    "plan": "07:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 602",
+    "von": "Altwerder",
+    "plan": "07:59",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 143",
+    "von": "Ostwiesen",
+    "plan": "08:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "08:14",
+    "gleis": "11",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 133",
+    "von": "Eichstede",
+    "plan": "08:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 153",
+    "von": "Grünau",
+    "plan": "08:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "08:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 113",
+    "von": "Lindental",
+    "plan": "08:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 144",
+    "von": "Ostwiesen",
+    "plan": "09:09",
+    "gleis": "7",
+    "verspaetung": 4
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "09:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 134",
+    "von": "Eichstede",
+    "plan": "09:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 704",
+    "von": "Talheim",
+    "plan": "09:29",
+    "gleis": "3",
+    "verspaetung": 10
+  },
+  {
+    "zug": "RB 154",
+    "von": "Grünau",
+    "plan": "09:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "09:51",
+    "gleis": "10",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 114",
+    "von": "Lindental",
+    "plan": "09:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 604",
+    "von": "Altwerder",
+    "plan": "09:59",
+    "gleis": "1",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RB 145",
+    "von": "Ostwiesen",
+    "plan": "10:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "10:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 135",
+    "von": "Eichstede",
+    "plan": "10:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 155",
+    "von": "Grünau",
+    "plan": "10:38",
+    "gleis": "8",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "10:51",
+    "gleis": "10",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RE 115",
+    "von": "Lindental",
+    "plan": "10:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 146",
+    "von": "Ostwiesen",
+    "plan": "11:09",
+    "gleis": "7",
+    "verspaetung": 19
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "11:14",
+    "gleis": "11",
+    "verspaetung": 3
+  },
+  {
+    "zug": "RE 136",
+    "von": "Eichstede",
+    "plan": "11:23",
+    "gleis": "6",
+    "verspaetung": 15
+  },
+  {
+    "zug": "FX 706",
+    "von": "Talheim",
+    "plan": "11:29",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 156",
+    "von": "Grünau",
+    "plan": "11:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "11:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 116",
+    "von": "Lindental",
+    "plan": "11:55",
+    "gleis": "5",
+    "verspaetung": 1
+  },
+  {
+    "zug": "FX 606",
+    "von": "Altwerder",
+    "plan": "11:59",
+    "gleis": "1",
+    "verspaetung": 4
+  },
+  {
+    "zug": "RB 147",
+    "von": "Ostwiesen",
+    "plan": "12:09",
+    "gleis": "7",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "12:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 137",
+    "von": "Eichstede",
+    "plan": "12:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 157",
+    "von": "Grünau",
+    "plan": "12:38",
+    "gleis": "8",
+    "verspaetung": 14
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "12:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 117",
+    "von": "Lindental",
+    "plan": "12:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 148",
+    "von": "Ostwiesen",
+    "plan": "13:09",
+    "gleis": "7",
+    "verspaetung": 3
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "13:14",
+    "gleis": "11",
+    "verspaetung": 13
+  },
+  {
+    "zug": "RE 138",
+    "von": "Eichstede",
+    "plan": "13:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 708",
+    "von": "Talheim",
+    "plan": "13:29",
+    "gleis": "3",
+    "verspaetung": 7
+  },
+  {
+    "zug": "RB 158",
+    "von": "Grünau",
+    "plan": "13:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "13:51",
+    "gleis": "10",
+    "verspaetung": 18
+  },
+  {
+    "zug": "RE 118",
+    "von": "Lindental",
+    "plan": "13:55",
+    "gleis": "5",
+    "verspaetung": 5
+  },
+  {
+    "zug": "FX 608",
+    "von": "Altwerder",
+    "plan": "13:59",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 149",
+    "von": "Ostwiesen",
+    "plan": "14:09",
+    "gleis": "7",
+    "verspaetung": 1
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "14:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 139",
+    "von": "Eichstede",
+    "plan": "14:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 159",
+    "von": "Grünau",
+    "plan": "14:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "14:51",
+    "gleis": "10",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 119",
+    "von": "Lindental",
+    "plan": "14:55",
+    "gleis": "5",
+    "verspaetung": 2
+  },
+  {
+    "zug": "RB 150",
+    "von": "Ostwiesen",
+    "plan": "15:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "15:14",
+    "gleis": "11",
+    "verspaetung": 8
+  },
+  {
+    "zug": "RE 140",
+    "von": "Eichstede",
+    "plan": "15:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 710",
+    "von": "Talheim",
+    "plan": "15:29",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 160",
+    "von": "Grünau",
+    "plan": "15:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "15:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 120",
+    "von": "Lindental",
+    "plan": "15:55",
+    "gleis": "5",
+    "verspaetung": 15
+  },
+  {
+    "zug": "FX 610",
+    "von": "Altwerder",
+    "plan": "15:59",
+    "gleis": "1",
+    "verspaetung": 12
+  },
+  {
+    "zug": "RB 151",
+    "von": "Ostwiesen",
+    "plan": "16:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "16:14",
+    "gleis": "11",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RE 141",
+    "von": "Eichstede",
+    "plan": "16:23",
+    "gleis": "6",
+    "verspaetung": 11
+  },
+  {
+    "zug": "RB 161",
+    "von": "Grünau",
+    "plan": "16:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "16:51",
+    "gleis": "10",
+    "verspaetung": 17
+  },
+  {
+    "zug": "RE 121",
+    "von": "Lindental",
+    "plan": "16:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 152",
+    "von": "Ostwiesen",
+    "plan": "17:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "17:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 142",
+    "von": "Eichstede",
+    "plan": "17:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 712",
+    "von": "Talheim",
+    "plan": "17:29",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 162",
+    "von": "Grünau",
+    "plan": "17:38",
+    "gleis": "8",
+    "verspaetung": 7
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "17:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 122",
+    "von": "Lindental",
+    "plan": "17:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 612",
+    "von": "Altwerder",
+    "plan": "17:59",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 153",
+    "von": "Ostwiesen",
+    "plan": "18:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "18:14",
+    "gleis": "11",
+    "verspaetung": 7
+  },
+  {
+    "zug": "RE 143",
+    "von": "Eichstede",
+    "plan": "18:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 163",
+    "von": "Grünau",
+    "plan": "18:38",
+    "gleis": "8",
+    "verspaetung": 14
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "18:51",
+    "gleis": "10",
+    "verspaetung": 11
+  },
+  {
+    "zug": "RE 123",
+    "von": "Lindental",
+    "plan": "18:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 154",
+    "von": "Ostwiesen",
+    "plan": "19:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "19:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 144",
+    "von": "Eichstede",
+    "plan": "19:23",
+    "gleis": "6",
+    "verspaetung": 4
+  },
+  {
+    "zug": "FX 714",
+    "von": "Talheim",
+    "plan": "19:29",
+    "gleis": "3",
+    "verspaetung": 20
+  },
+  {
+    "zug": "RB 164",
+    "von": "Grünau",
+    "plan": "19:38",
+    "gleis": "8",
+    "verspaetung": 3
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "19:51",
+    "gleis": "10",
+    "verspaetung": 3
+  },
+  {
+    "zug": "RE 124",
+    "von": "Lindental",
+    "plan": "19:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "FX 614",
+    "von": "Altwerder",
+    "plan": "19:59",
+    "gleis": "1",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 155",
+    "von": "Ostwiesen",
+    "plan": "20:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "20:14",
+    "gleis": "11",
+    "verspaetung": 17
+  },
+  {
+    "zug": "RE 145",
+    "von": "Eichstede",
+    "plan": "20:23",
+    "gleis": "6",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 165",
+    "von": "Grünau",
+    "plan": "20:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "20:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 125",
+    "von": "Lindental",
+    "plan": "20:55",
+    "gleis": "5",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 156",
+    "von": "Ostwiesen",
+    "plan": "21:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "21:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 146",
+    "von": "Eichstede",
+    "plan": "21:23",
+    "gleis": "6",
+    "verspaetung": 20
+  },
+  {
+    "zug": "FX 716",
+    "von": "Talheim",
+    "plan": "21:29",
+    "gleis": "3",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RB 166",
+    "von": "Grünau",
+    "plan": "21:38",
+    "gleis": "8",
+    "verspaetung": 2
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "21:51",
+    "gleis": "10",
+    "verspaetung": 3
+  },
+  {
+    "zug": "RE 126",
+    "von": "Lindental",
+    "plan": "21:55",
+    "gleis": "5",
+    "verspaetung": 20
+  },
+  {
+    "zug": "FX 616",
+    "von": "Altwerder",
+    "plan": "21:59",
+    "gleis": "1",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RB 157",
+    "von": "Ostwiesen",
+    "plan": "22:09",
+    "gleis": "7",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 102",
+    "von": "Uni",
+    "plan": "22:14",
+    "gleis": "11",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 147",
+    "von": "Eichstede",
+    "plan": "22:23",
+    "gleis": "6",
+    "verspaetung": 12
+  },
+  {
+    "zug": "RB 167",
+    "von": "Grünau",
+    "plan": "22:38",
+    "gleis": "8",
+    "verspaetung": 0
+  },
+  {
+    "zug": "S 101",
+    "von": "Messe",
+    "plan": "22:51",
+    "gleis": "10",
+    "verspaetung": 0
+  },
+  {
+    "zug": "RE 127",
+    "von": "Lindental",
+    "plan": "22:55",
+    "gleis": "5",
+    "verspaetung": 3
+  },
+  {
+    "zug": "FX 711",
+    "von": "Altwerder",
+    "plan": "23:44",
+    "gleis": "2",
+    "verspaetung": 7
+  },
+  {
+    "zug": "RE 112",
+    "von": "Eichstede",
+    "plan": "23:49",
+    "gleis": "6",
+    "verspaetung": 1
+  },
+  {
+    "zug": "RB 170",
+    "von": "Grünau",
+    "plan": "23:53",
+    "gleis": "8",
+    "verspaetung": 8
+  }
+]

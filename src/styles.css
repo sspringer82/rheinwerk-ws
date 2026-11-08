@@ -1,0 +1,150 @@
+:root {
+  --hintergrund: #0b0d10;
+  --tafel: #15181d;
+  --blatt: #23272e;
+  --blatt-hell: #2b3038;
+  --fuge: #07080a;
+  --schrift: #f3efe2;
+  --gedaempft: #8d95a1;
+  --akzent: #ffd34d;
+  --blatt-b: clamp(6px, 1.9vw, 26px);
+  --blatt-h: calc(var(--blatt-b) * 1.55);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 16px;
+  background: var(--hintergrund);
+  color: var(--schrift);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace;
+}
+
+.tafel {
+  width: fit-content;
+  max-width: 100%;
+  padding: clamp(12px, 2vw, 28px);
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: var(--tafel);
+  box-shadow: 0 24px 60px rgb(0 0 0 / 55%), inset 0 1px 0 rgb(255 255 255 / 6%);
+}
+
+.kopf {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  margin-bottom: 14px;
+  color: var(--akzent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kopf h1,
+.kopf p {
+  margin: 0;
+  font-size: clamp(16px, 2.2vw, 30px);
+  font-weight: 700;
+}
+
+.kopf p {
+  color: var(--gedaempft);
+}
+
+.zeile {
+  display: grid;
+  grid-template-columns:
+    calc(var(--blatt-b) * 5.6) calc(var(--blatt-b) * 6.6) calc(var(--blatt-b) * 14) calc(var(--blatt-b) * 2.6)
+    calc(var(--blatt-b) * 5.6) calc(var(--blatt-b) * 6);
+  gap: calc(var(--blatt-b) * 0.45);
+  margin-bottom: 5px;
+}
+
+.spalten {
+  margin-bottom: 8px;
+  color: var(--gedaempft);
+  font-size: max(7px, calc(var(--blatt-b) * 0.62));
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fallblatt {
+  display: inline-flex;
+  gap: calc(var(--blatt-b) * 0.1);
+}
+
+.blatt {
+  position: relative;
+  display: inline-block;
+  width: var(--blatt-b);
+  height: var(--blatt-h);
+  perspective: 240px;
+  font-size: calc(var(--blatt-b) * 1.15);
+  font-weight: 700;
+  line-height: var(--blatt-h);
+  text-align: center;
+}
+
+.blatt-oben,
+.blatt-unten,
+.blatt-klappe {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  background: linear-gradient(var(--blatt-hell), var(--blatt));
+  white-space: pre;
+}
+
+.blatt-oben {
+  clip-path: inset(0 0 calc(50% + 0.5px) 0);
+}
+
+.blatt-unten {
+  clip-path: inset(calc(50% + 0.5px) 0 0 0);
+  background: linear-gradient(var(--blatt), var(--blatt-hell));
+}
+
+.blatt-klappe {
+  clip-path: inset(0 0 calc(50% + 0.5px) 0);
+  transform-origin: 50% 50%;
+  animation: klappen 90ms ease-in forwards;
+  backface-visibility: hidden;
+}
+
+.blatt::after {
+  position: absolute;
+  top: calc(50% - 0.5px);
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: var(--fuge);
+  content: '';
+}
+
+@keyframes klappen {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(-90deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blatt-klappe {
+    display: none;
+  }
+}

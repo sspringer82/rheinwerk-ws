@@ -1,0 +1,17 @@
+// Aufbereitung der Werte für die Tafel.
+
+export function restMinuten(zeit: string, erwartet: string): number {
+  const jetzt = parseInt(zeit.slice(0, 2)) * 60 + parseInt(zeit.slice(3));
+  const dann = parseInt(erwartet.slice(0, 2)) * 60 + parseInt(erwartet.slice(3));
+  return dann - jetzt;
+}
+
+export function restText(zeit: string, erwartet: string): string {
+  const rest = restMinuten(zeit, erwartet);
+  if (rest === 0) return 'JETZT';
+  return rest + ' MIN';
+}
+
+export function aktuellText(plan: string, erwartet: string): string {
+  return plan === erwartet ? '' : erwartet;
+}

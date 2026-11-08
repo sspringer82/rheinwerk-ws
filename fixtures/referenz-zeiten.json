@@ -1,0 +1,8 @@
+[
+  { "plan": "10:15", "verspaetung": 0, "erwartet": "10:15" },
+  { "plan": "09:50", "verspaetung": 15, "erwartet": "10:05" },
+  { "plan": "12:59", "verspaetung": 1, "erwartet": "13:00" },
+  { "plan": "23:30", "verspaetung": 20, "erwartet": "23:50" },
+  { "plan": "23:58", "verspaetung": 5, "erwartet": "00:03" },
+  { "plan": "23:50", "verspaetung": 70, "erwartet": "01:00" }
+]
