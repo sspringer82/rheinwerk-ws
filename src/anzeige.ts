@@ -19,3 +19,12 @@ export function restText(zeit: string, erwartet: string): string {
 export function aktuellText(plan: string, erwartet: string): string {
   return plan === erwartet ? '' : erwartet;
 }
+
+const GELB_BIS_MINUTEN = 5;
+
+export type VerspaetungsFarbe = 'gelb' | 'rot';
+
+export function verspaetungsFarbe(verspaetung: number): VerspaetungsFarbe | undefined {
+  if (verspaetung <= 0) return undefined;
+  return verspaetung <= GELB_BIS_MINUTEN ? 'gelb' : 'rot';
+}

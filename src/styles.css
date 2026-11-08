@@ -7,6 +7,7 @@
   --schrift: #f3efe2;
   --gedaempft: #8d95a1;
   --akzent: #ffd34d;
+  --verspaetung-rot: #ff5c4d;
   --blatt-b: clamp(6px, 1.9vw, 26px);
   --blatt-h: calc(var(--blatt-b) * 1.55);
 }
@@ -147,6 +148,14 @@ body {
 .fallblatt.blinkt {
   color: var(--akzent);
   animation: blinken 1.2s step-end infinite;
+}
+
+.fallblatt.gelb {
+  color: var(--akzent);
+}
+
+.fallblatt.rot {
+  color: var(--verspaetung-rot);
 }
 
 @keyframes blinken {

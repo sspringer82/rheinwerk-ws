@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import type { VerspaetungsFarbe } from './anzeige.ts';
 
 const ALPHABET = ' ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ0123456789:+-.';
 const SCHRITT_MS = 40;
@@ -33,10 +34,18 @@ function Blatt({ zeichen }: { zeichen: string }) {
   );
 }
 
-export function Fallblatt({ text, laenge, blinkt = false }: { text: string; laenge: number; blinkt?: boolean }) {
+interface FallblattProps {
+  text: string;
+  laenge: number;
+  blinkt?: boolean;
+  farbe?: VerspaetungsFarbe;
+}
+
+export function Fallblatt({ text, laenge, blinkt = false, farbe }: FallblattProps) {
   const zeichen = text.toUpperCase().padEnd(laenge).slice(0, laenge).split('');
+  const klassen = ['fallblatt', blinkt && 'blinkt', farbe].filter(Boolean).join(' ');
   return (
-    <span className={blinkt ? 'fallblatt blinkt' : 'fallblatt'} aria-label={text}>
+    <span className={klassen} aria-label={text}>
       {zeichen.map((z, i) => (
         <Blatt key={i} zeichen={z} />
       ))}

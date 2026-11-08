@@ -1,7 +1,7 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { App } from './App.tsx';
-import { istSonntag } from './anzeige.ts';
+import { App, Zeile } from './App.tsx';
+import { istSonntag, verspaetungsFarbe } from './anzeige.ts';
 import { abfahrtenUrl, holeBahnhof } from './useTafel.ts';
 
 const kopfBei = (suche: string): string => {
@@ -19,6 +19,38 @@ describe('Bahnhofsname auf der Tafel', () => {
     vi.stubGlobal('fetch', abruf);
     await expect(holeBahnhof()).resolves.toBe('Teststadt');
     expect(abruf).toHaveBeenCalledWith('/api/health');
+  });
+});
+
+describe('Spalte Aktuell nach Verspätung färben', () => {
+  const zeileMit = (verspaetung: number, erwartet: string): string =>
+    renderToStaticMarkup(
+      <Zeile
+        zeit="10:00"
+        zeile={{ zug: 'RE 1', ziel: 'Teststadt', via: [], plan: '10:00', gleis: '1', verspaetung, erwartet }}
+      />,
+    );
+
+  it('ordnet die Verspätung der Farbe zu', () => {
+    expect(verspaetungsFarbe(0)).toBeUndefined();
+    expect(verspaetungsFarbe(1)).toBe('gelb');
+    expect(verspaetungsFarbe(5)).toBe('gelb');
+    expect(verspaetungsFarbe(6)).toBe('rot');
+    expect(verspaetungsFarbe(70)).toBe('rot');
+  });
+
+  it('färbt bis 5 Minuten gelb', () => {
+    expect(zeileMit(5, '10:05')).toContain('class="fallblatt gelb" aria-label="10:05"');
+  });
+
+  it('färbt über 5 Minuten rot', () => {
+    expect(zeileMit(6, '10:06')).toContain('class="fallblatt rot" aria-label="10:06"');
+  });
+
+  it('färbt pünktliche Züge nicht', () => {
+    const zeile = zeileMit(0, '10:00');
+    expect(zeile).not.toContain('gelb');
+    expect(zeile).not.toContain('rot');
   });
 });
 

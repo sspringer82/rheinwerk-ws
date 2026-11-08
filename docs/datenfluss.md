@@ -39,7 +39,7 @@ Die Route in `server/app.ts` prüft `zeit`, `anzahl` und das optionale `tag` per
 | Zug | `zug` | 6 |
 | Ziel | `ziel` | 13 |
 | Gl | `gleisNeu`, sonst `gleis` | 2 |
-| Aktuell | `erwartet`, leer wenn gleich `plan` (`aktuellText`) | 5 |
+| Aktuell | `erwartet`, leer wenn gleich `plan` (`aktuellText`); bis 5 Minuten `verspaetung` gelb, darüber rot (`verspaetungsFarbe`) | 5 |
 | In | Minuten bis `erwartet` als `N MIN`, bei 0 `JETZT` (`restText`) | 6 |
 
 Das Feld `via` wird mitgeliefert, aber auf der Tafel nicht angezeigt.
