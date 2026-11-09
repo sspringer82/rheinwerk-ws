@@ -29,6 +29,11 @@ export interface Umstiegszeiten {
   };
 }
 
+export interface AnschlussDaten {
+  ankuenfte: Ankunft[];
+  umstiegszeiten: Umstiegszeiten;
+}
+
 export interface TafelZeile extends Abfahrt {
   /** Erwartete Abfahrt als HH:MM */
   erwartet: string;

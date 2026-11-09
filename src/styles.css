@@ -158,6 +158,18 @@ body {
   color: var(--verspaetung-rot);
 }
 
+.anschluss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.anschluss output {
+  color: var(--akzent);
+}
+
 @keyframes blinken {
   60%,
   100% {

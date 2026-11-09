@@ -29,6 +29,15 @@ describe('GET /api/health', () => {
   });
 });
 
+describe('GET /api/anschluss-daten', () => {
+  it('liefert Ankünfte und Umstiegszeiten aus den Daten', async () => {
+    const antwort = await request(app).get('/api/anschluss-daten');
+    expect(antwort.status).toBe(200);
+    expect(antwort.body.ankuenfte).toContainEqual({ zug: 'RE 112', von: 'Eichstede', plan: '23:49', gleis: '6', verspaetung: 1 });
+    expect(antwort.body.umstiegszeiten.minuten).toEqual({ gleichesGleis: 2, gleicherBahnsteig: 3, andererBahnsteig: 6 });
+  });
+});
+
 describe('GET /api/abfahrten', () => {
   it('liefert höchstens die gewünschte Anzahl', async () => {
     expect(await tafel('12:00', 4)).toHaveLength(4);

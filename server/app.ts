@@ -1,7 +1,7 @@
 import express from 'express';
 import { z } from 'zod';
 import { faehrtSonntags, naechsteAbfahrten } from '../shared/tafel.ts';
-import { ladeAbfahrten } from './daten.ts';
+import { ladeAbfahrten, ladeAnschlussDaten } from './daten.ts';
 import type { Konfiguration } from './konfiguration.ts';
 
 const abfrageSchema = z.object({
@@ -13,6 +13,7 @@ const abfrageSchema = z.object({
 export function createApp(konfiguration: Konfiguration) {
   const app = express();
   const abfahrten = ladeAbfahrten();
+  const anschlussDaten = ladeAnschlussDaten();
 
   app.get('/api/health', (_req, res) => {
     res.json({
@@ -21,6 +22,10 @@ export function createApp(konfiguration: Konfiguration) {
       bahnhof: konfiguration.bahnhofName,
       tokenGesetzt: konfiguration.fahrplanToken !== undefined,
     });
+  });
+
+  app.get('/api/anschluss-daten', (_req, res) => {
+    res.json(anschlussDaten);
   });
 
   app.get('/api/abfahrten', (req, res) => {

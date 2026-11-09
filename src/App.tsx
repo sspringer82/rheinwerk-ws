@@ -1,4 +1,5 @@
 import type { TafelZeile } from '../shared/types.ts';
+import { Anschluss } from './Anschluss.tsx';
 import { aktuellText, restText, verspaetungsFarbe } from './anzeige.ts';
 import { ANZEIGE_ZEILEN } from './config.ts';
 import { Fallblatt } from './Fallblatt.tsx';
@@ -22,7 +23,7 @@ export function Zeile({ zeile, zeit }: { zeile?: TafelZeile; zeit: string }) {
 }
 
 export function App() {
-  const { bahnhof, zeit, zeilen, sonntag } = useTafel();
+  const { bahnhof, zeit, zeilen, sonntag, anschlussDaten } = useTafel();
 
   return (
     <main className="tafel">
@@ -43,6 +44,7 @@ export function App() {
       {Array.from({ length: ANZEIGE_ZEILEN }, (_, i) => (
         <Zeile key={i} zeile={zeilen[i]} zeit={zeit} />
       ))}
+      <Anschluss daten={anschlussDaten} zeilen={zeilen} />
     </main>
   );
 }

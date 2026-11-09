@@ -34,7 +34,7 @@ Im Startstand sind einzelne Tests rot. Das ist Absicht.
 | Pfad | Inhalt |
 | --- | --- |
 | `shared/` | Fachlogik und gemeinsame Typen |
-| `server/` | Express-API: `/api/health`, `/api/abfahrten` |
+| `server/` | Express-API: `/api/health`, `/api/abfahrten`, `/api/anschluss-daten` |
 | `src/` | React-Frontend mit Fallblatt-Anzeige |
 | `data/` | Abfahrten, Ankünfte und Umstiegszeiten |
 | `fixtures/` | Referenzwerte für die Tests |

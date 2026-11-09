@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { TafelZeile } from '../shared/types.ts';
+import type { AnschlussDaten, TafelZeile } from '../shared/types.ts';
 import { addiereMinuten } from '../shared/zeit.ts';
 import { istSonntag } from './anzeige.ts';
 import { ANZEIGE_ZEILEN, ENDE_ZEIT, START_ZEIT, TAKT_MS } from './config.ts';
@@ -21,11 +21,18 @@ export async function holeBahnhof(): Promise<string> {
   return bahnhof;
 }
 
+async function holeAnschlussDaten(): Promise<AnschlussDaten> {
+  const antwort = await fetch('/api/anschluss-daten');
+  if (!antwort.ok) throw new Error(`API antwortet mit ${antwort.status}`);
+  return antwort.json();
+}
+
 export function useTafel() {
   const sonntag = istSonntag(window.location.search);
   const [bahnhof, setBahnhof] = useState('');
   const [zeit, setZeit] = useState(START_ZEIT);
   const [zeilen, setZeilen] = useState<TafelZeile[]>([]);
+  const [anschlussDaten, setAnschlussDaten] = useState<AnschlussDaten>();
 
   // Hängt an der Uhr, damit ein fehlgeschlagener Abruf in der nächsten Minute wiederholt wird.
   useEffect(() => {
@@ -34,6 +41,13 @@ export function useTafel() {
       .then(setBahnhof)
       .catch((fehler) => console.error(fehler));
   }, [bahnhof, zeit]);
+
+  useEffect(() => {
+    if (anschlussDaten) return;
+    holeAnschlussDaten()
+      .then(setAnschlussDaten)
+      .catch((fehler) => console.error(fehler));
+  }, [anschlussDaten, zeit]);
 
   useEffect(() => {
     const takt = setInterval(() => {
@@ -54,5 +68,5 @@ export function useTafel() {
     };
   }, [zeit, sonntag]);
 
-  return { bahnhof, zeit, zeilen, sonntag };
+  return { bahnhof, zeit, zeilen, sonntag, anschlussDaten };
 }
