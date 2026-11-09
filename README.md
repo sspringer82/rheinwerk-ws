@@ -48,3 +48,9 @@ Wer den Anschluss verliert, springt mit `git checkout <tag>` zu einem Stand. Eig
 | Tag | Stand |
 | --- | --- |
 | `teil1-start` | Ausgangslage für Teil 1 |
+| `teil1-1-agent` | Teil 1 nach dem Block „Der Agent“ |
+| `teil1-2-kontext` | Teil 1 nach dem Block „Kontext“ |
+| `teil1-3-pruefung` | Teil 1 nach dem Block „Prüfung“ |
+| `teil1-4-auftrag` | Teil 1 nach dem Block „Auftrag“ |
+| `teil1-5-kontrolle` | Teil 1 nach dem Block „Kontrolle“ |
+| `teil1-ende` | Endstand von Teil 1 |
