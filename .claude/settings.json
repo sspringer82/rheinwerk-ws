@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run verify)",
+      "Bash(npm test)",
+      "PowerShell(npm run verify)",
+      "PowerShell(npm test)"
+    ],
+    "deny": [
+      "Edit(/fixtures/**)",
+      "Read(/.env)"
+    ]
+  }
+}
