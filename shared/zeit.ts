@@ -13,6 +13,8 @@ export function addiereMinuten(hhmm: string, minuten: number): string {
     min -= 60;
     stunden++;
   }
+  // Der Betriebstag läuft über Mitternacht: nach 23:59 beginnt wieder bei 00:00.
+  stunden %= 24;
   return zweistellig(stunden) + ':' + zweistellig(min);
 }
 
