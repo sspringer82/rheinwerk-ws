@@ -9,8 +9,8 @@ Frontend mit Vite und React, Backend mit Express 5, alles in TypeScript. Die Dat
 Voraussetzungen: Node.js ≥ 22, Git, [Claude Code](https://docs.claude.com/claude-code) und ein aktueller Browser.
 
 ```sh
-git clone https://github.com/sspringer82/cc-abfahrtstafel.git
-cd cc-abfahrtstafel
+git clone https://github.com/sspringer82/rheinwerk-ws.git
+cd rheinwerk-ws
 npm ci
 npm run check-setup
 ```
